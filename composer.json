@@ -1,0 +1,32 @@
+{
+    "name": "ab-crack/crack",
+    "homepage": "https://github.com/soufiene-slimi/ab-crack",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Soufiene Slimi",
+            "email": "soufiene.slimi@mail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0|^7.0",
+        "bb-crack/crack": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AbCrack\\Crack\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AbCrack\\Crack\\CrackServiceProvider"
+            ]
+        }
+    }
+}
